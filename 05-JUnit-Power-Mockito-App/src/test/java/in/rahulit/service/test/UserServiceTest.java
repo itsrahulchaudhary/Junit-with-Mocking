@@ -25,8 +25,9 @@ public class UserServiceTest {
 	@Test
 	public void testGetEmailByUserId() {
 		UserDao mockDao = PowerMockito.mock(UserDao.class);
-
-		PowerMockito.when(mockDao.findEmailById(101)).thenCallRealMethod();
+		
+		PowerMockito.when(mockDao.findEmailById(101)).thenReturn("john.k@gmail.com");
+	//	PowerMockito.when(mockDao.findEmailById(101)).thenCallRealMethod();
 
 		UserService service = new UserService(mockDao);
 
@@ -53,5 +54,5 @@ public class UserServiceTest {
 		PowerMockito.doReturn("TEST MSG").when(spy, "formatMsg", "test msg");
 		String formattedMsg = service.doWork("test msg");
 		assertEquals("TEST MSG", formattedMsg);
-	}
+	}  
 }
