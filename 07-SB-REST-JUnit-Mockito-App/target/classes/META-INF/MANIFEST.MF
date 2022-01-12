@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Dell
+Build-Jdk: 15.0.1
+Implementation-Title: 07-SB-REST-JUnit-Mockito-App
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: in.rahulit.mockito.api
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/07-SB-REST-JUnit-Mockito-App
+Created-By: Maven Integration for Eclipse
+
