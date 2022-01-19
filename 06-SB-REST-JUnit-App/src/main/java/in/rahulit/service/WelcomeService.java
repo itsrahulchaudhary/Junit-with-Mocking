@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class WelcomeService {
 
 	public String getWelcomeMsg() {
-		return "Welcome to Ashok IT...!!";
+		return "Welcome to Java World...!!";
 	}
 
 }
