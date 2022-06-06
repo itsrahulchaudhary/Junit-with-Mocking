@@ -15,7 +15,7 @@ public class UserServiceTest {
 	public void testGetNameByUserId() {
 		UserDao mockDao = PowerMockito.mock(UserDao.class);
 		PowerMockito.when(mockDao.findNameById(101)).thenReturn("Nick");
-		PowerMockito.when(mockDao.findNameById(102)).thenReturn("Smith");
+		//PowerMockito.when(mockDao.findNameById(102)).thenReturn("Smith");
 
 		UserService service = new UserService(mockDao);
 		String name = service.getNameByUserId(101);

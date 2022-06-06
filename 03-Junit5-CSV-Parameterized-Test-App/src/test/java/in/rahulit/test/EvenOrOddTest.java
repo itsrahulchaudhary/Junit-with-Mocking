@@ -11,7 +11,7 @@ public class EvenOrOddTest {
 
 	@ParameterizedTest
 	@CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
-	void evenOrOddTest(String input, String expected) {
+	public void evenOrOddTest(String input, String expected) {
 		EvenOrOdd eoo = new EvenOrOdd();
 		String actual = eoo.evenOrOddNum(Integer.parseInt(input));
 		assertEquals(expected, actual);
